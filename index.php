@@ -5,7 +5,7 @@
 // I dati anche qui non arrivano da db ma da un array.
 
 
-  require_once(__DIR__ . '/stanze.php');
+  require_once(__DIR__ . '/Stanza.php');
   require(__DIR__ . '/database.php');
 
 ?>

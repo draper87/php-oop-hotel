@@ -3,12 +3,12 @@
   // creiamo classe Stanza
   class Stanza {
     // impostiamo gli attributi
-    public $id;
+    protected $id;
     protected $room_number;
-    public $floor;
-    public $beds;
-    public $created_at;
-    public $updated_at;
+    protected $floor;
+    protected $beds;
+    protected $created_at;
+    protected $updated_at;
 
     // decidiamo quali attribuire passare al momento della creazione delle istanze
     public function __construct($_id, $_room_number, $_floor, $_beds, $_created_at, $_updated_at) {

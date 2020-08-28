@@ -4,7 +4,7 @@
   class Stanza {
     // impostiamo gli attributi
     public $id;
-    public $room_number;
+    protected $room_number;
     public $floor;
     public $beds;
     public $created_at;
@@ -21,7 +21,7 @@
     }
 
     // creo metodo che controlla che i data passati all attributo room_number siano numeri interi
-    public function setRoomNumber($room_number) {
+    protected function setRoomNumber($room_number) {
       if (is_numeric($room_number)) {
         return $room_number;
       } else {
